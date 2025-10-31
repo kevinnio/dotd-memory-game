@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "name": "Card List Updater",
+  "description": "Automatically updates or creates cards_list.md with the complete list of cards whenever a new card is added to the Day of the Dead memory game",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "*.js",
+      "*.html",
+      "*.json",
+      "cards/*",
+      "assets/cards/*",
+      "images/cards/*"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A new card has been added to the Day of the Dead memory game. Please scan all game files to identify all cards currently in the game, then update or create a file called cards_list.md that contains a comprehensive list of all cards with their names, descriptions, and any relevant details. Make sure the list is well-formatted and includes all card pairs used in the memory game."
+  }
+}

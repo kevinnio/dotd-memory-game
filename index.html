@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Day of the Dead Memory Game - A cultural themed card matching game featuring Mexican Día de los Muertos imagery">
+    <meta name="keywords" content="memory game, Day of the Dead, Día de los Muertos, card game, Mexican culture">
+    <meta name="author" content="Day of the Dead Memory Game">
+    <meta name="theme-color" content="#1a0d1a">
+    
+    <title>Day of the Dead Memory Game</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="game-header">
+        <h1 class="game-title">Day of the Dead Memory Game</h1>
+        <p class="game-subtitle">Find matching pairs in this Día de los Muertos themed memory game</p>
+    </header>
+
+    <main class="game-container">
+        <section class="game-info">
+            <div class="game-stats">
+                <span class="moves-counter">Moves: <span id="move-count">0</span></span>
+                <span class="timer-display">Time: <span id="timer-display">00:00</span></span>
+                <button id="reset-btn" class="reset-button">New Game</button>
+            </div>
+        </section>
+
+        <section class="game-board">
+            <div id="game-grid" class="game-grid" role="grid" aria-label="Memory game board with 16 cards arranged in 4x4 grid">
+                <!-- 16 cards will be dynamically generated here for 4x4 grid -->
+            </div>
+        </section>
+
+        <section class="game-message">
+            <div id="win-message" class="win-message hidden" role="alert" aria-live="polite">
+                <h2>¡Felicidades!</h2>
+                <p>You've found all the matching pairs!</p>
+                <button id="play-again-btn" class="play-again-button">Play Again</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/card-data.js"></script>
+    <script src="scripts/card.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>

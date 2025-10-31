@@ -1,0 +1,50 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ofrenda 3 - Skull and cross altar -->
+  <defs>
+    <radialGradient id="bg11" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2d1b2d"/>
+      <stop offset="100%" style="stop-color:#1a0d1a"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" fill="url(#bg11)" rx="8"/>
+  
+  <!-- Altar steps -->
+  <rect x="20" y="75" width="60" height="20" fill="#8b4a9c"/>
+  <rect x="25" y="65" width="50" height="15" fill="#2d1b2d"/>
+  
+  <!-- Central cross -->
+  <rect x="47" y="20" width="6" height="30" fill="#f4f4f4"/>
+  <rect x="35" y="32" width="30" height="6" fill="#f4f4f4"/>
+  
+  <!-- Small skull at base of cross -->
+  <ellipse cx="50" cy="55" rx="8" ry="10" fill="#f4f4f4"/>
+  <circle cx="46" cy="52" r="2" fill="#1a0d1a"/>
+  <circle cx="54" cy="52" r="2" fill="#1a0d1a"/>
+  <path d="M50 56 L48 60 L52 60 Z" fill="#1a0d1a"/>
+  
+  <!-- Candles -->
+  <rect x="30" y="55" width="4" height="12" fill="#f4f4f4"/>
+  <rect x="66" y="55" width="4" height="12" fill="#f4f4f4"/>
+  <ellipse cx="32" cy="52" rx="2" ry="3" fill="#ff6b35"/>
+  <ellipse cx="68" cy="52" rx="2" ry="3" fill="#ff6b35"/>
+  
+  <!-- Flowers -->
+  <circle cx="15" cy="80" r="4" fill="#ff6b35"/>
+  <circle cx="85" cy="80" r="4" fill="#ff6b35"/>
+  <circle cx="35" cy="78" r="3" fill="#ff6b35"/>
+  <circle cx="65" cy="78" r="3" fill="#ff6b35"/>
+  
+  <!-- Rosary beads -->
+  <circle cx="40" cy="70" r="2" fill="#8b4a9c"/>
+  <circle cx="43" cy="72" r="2" fill="#8b4a9c"/>
+  <circle cx="46" cy="74" r="2" fill="#8b4a9c"/>
+  <circle cx="54" cy="74" r="2" fill="#8b4a9c"/>
+  <circle cx="57" cy="72" r="2" fill="#8b4a9c"/>
+  <circle cx="60" cy="70" r="2" fill="#8b4a9c"/>
+  
+  <!-- Incense -->
+  <rect x="48" y="68" width="4" height="6" fill="#2d1b2d"/>
+  <path d="M50 65 Q52 60 50 55 Q48 50 50 45" stroke="#f4f4f4" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>

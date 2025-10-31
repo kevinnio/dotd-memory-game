@@ -1,0 +1,46 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Catrina 2 - Skeleton with flower crown -->
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2d1b2d"/>
+      <stop offset="100%" style="stop-color:#1a0d1a"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" fill="url(#bg2)" rx="8"/>
+  
+  <!-- Flower crown -->
+  <circle cx="35" cy="20" r="5" fill="#ff6b35"/>
+  <circle cx="45" cy="15" r="5" fill="#8b4a9c"/>
+  <circle cx="55" cy="15" r="5" fill="#ff6b35"/>
+  <circle cx="65" cy="20" r="5" fill="#8b4a9c"/>
+  
+  <!-- Skull -->
+  <ellipse cx="50" cy="50" rx="20" ry="22" fill="#f4f4f4"/>
+  
+  <!-- Eye sockets with hearts -->
+  <path d="M43 42 Q40 38 43 35 Q46 38 43 42" fill="#ff6b35"/>
+  <path d="M57 42 Q54 38 57 35 Q60 38 57 42" fill="#ff6b35"/>
+  
+  <!-- Nose -->
+  <path d="M50 50 L46 58 L54 58 Z" fill="#1a0d1a"/>
+  
+  <!-- Smile -->
+  <path d="M40 62 Q50 70 60 62" stroke="#1a0d1a" stroke-width="3" fill="none"/>
+  
+  <!-- Teeth -->
+  <rect x="44" y="62" width="2" height="5" fill="#1a0d1a"/>
+  <rect x="47" y="62" width="2" height="5" fill="#1a0d1a"/>
+  <rect x="50" y="62" width="2" height="5" fill="#1a0d1a"/>
+  <rect x="53" y="62" width="2" height="5" fill="#1a0d1a"/>
+  <rect x="56" y="62" width="2" height="5" fill="#1a0d1a"/>
+  
+  <!-- Decorative swirls -->
+  <path d="M30 45 Q35 40 30 35" stroke="#8b4a9c" stroke-width="2" fill="none"/>
+  <path d="M70 45 Q65 40 70 35" stroke="#8b4a9c" stroke-width="2" fill="none"/>
+  
+  <!-- Dress -->
+  <rect x="30" y="72" width="40" height="20" fill="#ff6b35"/>
+  <path d="M35 80 Q40 75 45 80 Q50 75 55 80 Q60 75 65 80" stroke="#8b4a9c" stroke-width="2" fill="none"/>
+</svg>

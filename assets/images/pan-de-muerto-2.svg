@@ -1,0 +1,62 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pan de Muerto 2 - Decorated skull-shaped bread -->
+  <defs>
+    <radialGradient id="bg18" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2d1b2d"/>
+      <stop offset="100%" style="stop-color:#1a0d1a"/>
+    </radialGradient>
+    <radialGradient id="bread2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#8b4a9c"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" fill="url(#bg18)" rx="8"/>
+  
+  <!-- Main bread shaped like skull -->
+  <ellipse cx="50" cy="45" rx="22" ry="25" fill="url(#bread2)"/>
+  
+  <!-- Eye holes (filled with sugar) -->
+  <ellipse cx="42" cy="38" rx="5" ry="6" fill="#f4f4f4"/>
+  <ellipse cx="58" cy="38" rx="5" ry="6" fill="#f4f4f4"/>
+  <circle cx="42" cy="38" r="2" fill="#8b4a9c"/>
+  <circle cx="58" cy="38" r="2" fill="#8b4a9c"/>
+  
+  <!-- Nose hole -->
+  <path d="M50 48 L47 54 L53 54 Z" fill="#f4f4f4"/>
+  
+  <!-- Mouth with teeth -->
+  <rect x="40" y="58" width="20" height="6" fill="#f4f4f4"/>
+  <rect x="42" y="58" width="2" height="4" fill="#ff6b35"/>
+  <rect x="46" y="58" width="2" height="4" fill="#ff6b35"/>
+  <rect x="50" y="58" width="2" height="4" fill="#ff6b35"/>
+  <rect x="54" y="58" width="2" height="4" fill="#ff6b35"/>
+  <rect x="58" y="58" width="2" height="4" fill="#ff6b35"/>
+  
+  <!-- Decorative icing patterns -->
+  <path d="M35 30 Q40 25 45 30" stroke="#f4f4f4" stroke-width="2" fill="none"/>
+  <path d="M55 30 Q60 25 65 30" stroke="#f4f4f4" stroke-width="2" fill="none"/>
+  
+  <!-- Side decorations -->
+  <circle cx="32" cy="45" r="2" fill="#f4f4f4"/>
+  <circle cx="68" cy="45" r="2" fill="#f4f4f4"/>
+  
+  <!-- Sugar sprinkles -->
+  <rect x="40" y="32" width="1" height="2" fill="#f4f4f4"/>
+  <rect x="45" y="35" width="1" height="2" fill="#f4f4f4"/>
+  <rect x="55" y="35" width="1" height="2" fill="#f4f4f4"/>
+  <rect x="60" y="32" width="1" height="2" fill="#f4f4f4"/>
+  <rect x="38" y="50" width="1" height="2" fill="#f4f4f4"/>
+  <rect x="62" y="50" width="1" height="2" fill="#f4f4f4"/>
+  
+  <!-- Plate -->
+  <ellipse cx="50" cy="75" rx="30" ry="6" fill="#8b4a9c"/>
+  <ellipse cx="50" cy="73" rx="28" ry="5" fill="#2d1b2d"/>
+  
+  <!-- Crumbs -->
+  <circle cx="25" cy="78" r="1" fill="#ff6b35"/>
+  <circle cx="75" cy="78" r="1" fill="#ff6b35"/>
+  <circle cx="30" cy="82" r="1" fill="#8b4a9c"/>
+  <circle cx="70" cy="82" r="1" fill="#8b4a9c"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ofrenda 2 - Photo frame and offerings -->
+  <defs>
+    <radialGradient id="bg10" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2d1b2d"/>
+      <stop offset="100%" style="stop-color:#1a0d1a"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" fill="url(#bg10)" rx="8"/>
+  
+  <!-- Altar base -->
+  <rect x="10" y="65" width="80" height="30" fill="#8b4a9c"/>
+  
+  <!-- Photo frame -->
+  <rect x="35" y="25" width="30" height="25" fill="#2d1b2d"/>
+  <rect x="37" y="27" width="26" height="21" fill="#f4f4f4"/>
+  <!-- Simple portrait silhouette -->
+  <ellipse cx="50" cy="35" rx="8" ry="10" fill="#8b4a9c"/>
+  <rect x="42" y="42" width="16" height="6" fill="#8b4a9c"/>
+  
+  <!-- Candles on sides -->
+  <rect x="20" y="50" width="4" height="15" fill="#f4f4f4"/>
+  <rect x="76" y="50" width="4" height="15" fill="#f4f4f4"/>
+  <ellipse cx="22" cy="47" rx="2" ry="4" fill="#ff6b35"/>
+  <ellipse cx="78" cy="47" rx="2" ry="4" fill="#ff6b35"/>
+  
+  <!-- Flowers around frame -->
+  <circle cx="30" cy="30" r="3" fill="#ff6b35"/>
+  <circle cx="70" cy="30" r="3" fill="#ff6b35"/>
+  <circle cx="30" cy="45" r="3" fill="#ff6b35"/>
+  <circle cx="70" cy="45" r="3" fill="#ff6b35"/>
+  
+  <!-- Food offerings -->
+  <ellipse cx="25" cy="75" rx="6" ry="4" fill="#ff6b35"/>
+  <ellipse cx="50" cy="75" rx="8" ry="5" fill="#2d1b2d"/>
+  <ellipse cx="75" cy="75" rx="6" ry="4" fill="#ff6b35"/>
+  
+  <!-- Small decorative elements -->
+  <circle cx="40" cy="70" r="2" fill="#8b4a9c"/>
+  <circle cx="60" cy="70" r="2" fill="#8b4a9c"/>
+  
+  <!-- Papel picado (decorative paper) -->
+  <path d="M15 20 L25 15 L35 20 L45 15 L55 20 L65 15 L75 20 L85 15" stroke="#ff6b35" stroke-width="2" fill="none"/>
+  <rect x="20" y="15" width="5" height="8" fill="#8b4a9c"/>
+  <rect x="40" y="10" width="5" height="8" fill="#ff6b35"/>
+  <rect x="60" y="15" width="5" height="8" fill="#8b4a9c"/>
+  <rect x="80" y="10" width="5" height="8" fill="#ff6b35"/>
+</svg>

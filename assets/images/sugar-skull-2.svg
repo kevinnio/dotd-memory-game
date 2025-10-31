@@ -1,0 +1,47 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sugar Skull 2 - Geometric pattern skull -->
+  <defs>
+    <radialGradient id="bg6" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2d1b2d"/>
+      <stop offset="100%" style="stop-color:#1a0d1a"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" fill="url(#bg6)" rx="8"/>
+  
+  <!-- Main skull -->
+  <ellipse cx="50" cy="50" rx="24" ry="28" fill="#f4f4f4"/>
+  
+  <!-- Eye sockets with diamond patterns -->
+  <circle cx="42" cy="42" r="7" fill="#1a0d1a"/>
+  <circle cx="58" cy="42" r="7" fill="#1a0d1a"/>
+  <path d="M42 38 L38 42 L42 46 L46 42 Z" fill="#8b4a9c"/>
+  <path d="M58 38 L54 42 L58 46 L62 42 Z" fill="#8b4a9c"/>
+  <path d="M42 40 L40 42 L42 44 L44 42 Z" fill="#ff6b35"/>
+  <path d="M58 40 L56 42 L58 44 L60 42 Z" fill="#ff6b35"/>
+  
+  <!-- Nose -->
+  <path d="M50 52 L47 59 L53 59 Z" fill="#1a0d1a"/>
+  
+  <!-- Mouth with geometric teeth -->
+  <rect x="40" y="65" width="20" height="8" fill="#1a0d1a"/>
+  <rect x="42" y="65" width="2" height="6" fill="#f4f4f4"/>
+  <rect x="46" y="65" width="2" height="6" fill="#f4f4f4"/>
+  <rect x="50" y="65" width="2" height="6" fill="#f4f4f4"/>
+  <rect x="54" y="65" width="2" height="6" fill="#f4f4f4"/>
+  <rect x="58" y="65" width="2" height="6" fill="#f4f4f4"/>
+  
+  <!-- Forehead cross -->
+  <rect x="48" y="25" width="4" height="12" fill="#ff6b35"/>
+  <rect x="42" y="29" width="16" height="4" fill="#ff6b35"/>
+  
+  <!-- Cheek decorations -->
+  <circle cx="32" cy="52" r="3" fill="#8b4a9c"/>
+  <circle cx="68" cy="52" r="3" fill="#8b4a9c"/>
+  <rect x="30" y="48" width="4" height="8" fill="#ff6b35"/>
+  <rect x="66" y="48" width="4" height="8" fill="#ff6b35"/>
+  
+  <!-- Bottom pattern -->
+  <path d="M35 75 L40 80 L45 75 L50 80 L55 75 L60 80 L65 75" stroke="#8b4a9c" stroke-width="2" fill="none"/>
+</svg>
