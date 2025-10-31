@@ -118,8 +118,8 @@ body {
   cursor: pointer;
 }
 
-/* Card Hover Effects - Only for face-down cards */
-.card.face-down:hover {
+/* Card Hover Effects - Only for face-down cards that aren't flipping or processing */
+.card.face-down:not(.flipping):not(.processing):hover {
   transform: scale(1.05) translateY(-2px);
   border-color: var(--hover-color);
   background: linear-gradient(145deg, #3a2a3a, var(--card-back));
@@ -361,7 +361,6 @@ ard Flip Animations */
   );
   border-radius: 50%;
   opacity: 0.4;
-  animation: pulse 2s ease-in-out infinite;
 }
 
 /* Card Front Face */
@@ -412,15 +411,7 @@ ard Flip Animations */
   opacity: 0.7;
 }
 
-/* Hover Effects for Flippable Cards */
-.card:not(.flipped):not(.matched):not(.processing):hover .card-inner {
-  transform: rotateY(-10deg);
-}
-
-.card:not(.flipped):not(.matched):not(.processing):hover .card-face-back::before {
-  opacity: 0.7;
-  transform: scale(1.2);
-}
+/* Remove duplicate hover effects - handled by face-down specific rules above */
 
 /* Win Animation */
 .card.winning {
@@ -520,32 +511,18 @@ ard Flip Animations */
   transform: rotateY(0deg);
 }
 
-/* Flipping Animation State */
+/* Flipping Animation State - Override any hover effects */
 .card.flipping .card-inner {
-  transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) !important;
 }
 
-/* Matched Card Animation */
-.card.matched .card-inner {
-  animation: matchedPulse 1s ease-in-out;
+/* Ensure flipping cards ignore hover transforms */
+.card.flipping:hover {
+  transform: none !important;
 }
 
-@keyframes matchedPulse {
-  0% { transform: rotateY(180deg) scale(1); }
-  50% { transform: rotateY(180deg) scale(1.1); }
-  100% { transform: rotateY(180deg) scale(1); }
-}
-
-/* Pulse Animation for Card Backs */
-@keyframes pulse {
-  0%, 100% { 
-    opacity: 0.4;
-    transform: scale(1);
-  }
-  50% { 
-    opacity: 0.6;
-    transform: scale(1.1);
-  }
+.card.flipping:hover .card-inner {
+  transform: rotateY(180deg) !important;
 }
 
 /* Mismatch Animation */
@@ -568,12 +545,12 @@ ard Flip Animations */
   opacity: 0.7;
 }
 
-/* Hover Effects for Face-Down Cards Only */
-.card.face-down:not(.flipping):hover .card-inner {
+/* Hover Effects for Face-Down Cards Only - Exclude flipping and processing states */
+.card.face-down:not(.flipping):not(.processing):hover .card-inner {
   transform: rotateY(-10deg);
 }
 
-.card.face-down:not(.flipping):hover .card-pattern {
+.card.face-down:not(.flipping):not(.processing):hover .card-pattern {
   opacity: 0.7;
   transform: scale(1.2);
 }
