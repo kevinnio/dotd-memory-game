@@ -257,7 +257,7 @@ class Card {
   bindClickHandler(clickHandler) {
     this.clickHandler = clickHandler;
     
-    // Add click event listener
+    // Add click event listener - only works on face-down cards
     this.element.addEventListener('click', (event) => {
       event.preventDefault();
       if (this.canBeSelected()) {
@@ -265,23 +265,12 @@ class Card {
       }
     });
 
-    // Add keyboard event listener for accessibility
+    // Add keyboard event listener for accessibility - only works on face-down cards
     this.element.addEventListener('keydown', (event) => {
       if ((event.key === 'Enter' || event.key === ' ') && this.canBeSelected()) {
         event.preventDefault();
         this.clickHandler(this);
       }
-    });
-
-    // Add hover effects for better UX
-    this.element.addEventListener('mouseenter', () => {
-      if (this.canBeSelected()) {
-        this.element.classList.add('hover');
-      }
-    });
-
-    this.element.addEventListener('mouseleave', () => {
-      this.element.classList.remove('hover');
     });
   }
 
